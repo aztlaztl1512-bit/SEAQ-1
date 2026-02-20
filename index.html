@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+    :root {
+        --primary-color: #4a90e2;
+        --success-color: #2ecc71;
+        --error-color: #e74c3c;
+        --warning-color: #f39c12;
+        --bg-soft: #f8f9fa;
+    }
+
+    body { background-color: #eee; padding: 20px; }
+
+    .main-container {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        max-width: 850px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        border: 1px solid #e0e0e0;
+    }
+
+    .hero-header {
+        background: linear-gradient(135deg, var(--primary-color), #2c3e50);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-header h1 { margin: 0; font-size: 2.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+    .hero-header p { margin-top: 10px; opacity: 0.9; font-size: 1.1em; }
+
+    .content-padding { padding: 30px; }
+
+    .strategy-box {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        flex: 1;
+        min-width: 200px;
+        background: var(--bg-soft);
+        padding: 15px;
+        border-radius: 15px;
+        border-bottom: 4px solid var(--primary-color);
+        text-align: center;
+    }
+
+    .example-section { margin-top: 20px; }
+
+    .example-wrapper {
+        margin-bottom: 30px;
+        border: 2px solid #f0f0f0;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .example-text {
+        background: #fff;
+        padding: 20px;
+        font-size: 1.25em;
+        color: #333;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .wrong-mark { color: var(--error-color); font-weight: bold; text-decoration: underline; }
+    .correct-mark { color: var(--success-color); font-weight: bold; }
+
+    .feedback-area {
+        background: #fdfdfd;
+        padding: 20px;
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .feedback-icon {
+        background: var(--warning-color);
+        color: white;
+        padding: 5px 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    .feedback-content { color: #555; line-height: 1.7; font-size: 0.95em; }
+
+    .footer-signature {
+        background: #f8f9fa;
+        padding: 25px;
+        text-align: center;
+        border-top: 2px dashed #d1d1d1;
+    }
+
+    .name-tag { color: #2c3e50; font-size: 1.3em; font-weight: bold; margin-bottom: 5px; }
+    .school-tag { color: var(--primary-color); font-weight: 500; }
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <!-- الرأس -->
+    <div class="hero-header">
+        <h1>💎 أسرار الخطأ السياقي</h1>
+        <p>دليلك الملون للتميز في القدرات اللفظي</p>
+    </div>
+
+    <div class="content-padding">
+        <!-- تكتيكات سريعة -->
+        <div class="strategy-box">
+            <div class="stat-card">💡 <b>اقسم الجملة</b><br>ابحث عن الخلل في كل شطر</div>
+            <div class="stat-card" style="border-color: var(--success-color);">🔄 <b>جرب العكس</b><br>عكس الكلمة يصحح المعنى</div>
+            <div class="stat-card" style="border-color: var(--warning-color);">⚠️ <b>فخ المقارنة</b><br>انتبه لـ (أكبر، أقل، أكثر)</div>
+        </div>
+
+        <h2 style="color: #2c3e50; border-right: 5px solid var(--primary-color); padding-right: 15px;">تطبيقات عملية</h2>
+
+        <!-- مثال 1 -->
+        <div class="example-wrapper">
+            <div class="example-text">
+                ١. "من ذمّ الناس في <span class="wrong-mark">حضورهم</span>، فقد مدحهم في غيبتهم."
+            </div>
+            <div class="feedback-area">
+                <div class="feedback-icon">تغذية راجعة</div>
+                <div class="feedback-content">
+                    <b>لماذا الخطأ؟</b> الجملة تتحدث عن التناقض. الشخص الذي يمدح في الغيبة لا يذم في الحضور. المنطق أن المنافق يذم في <b>(غيبتهم)</b> ويمدح في حضورهم.
+                    <br><span class="correct-mark">✔️ الصواب: غيبتهم</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 2 -->
+        <div class="example-wrapper">
+            <div class="example-text">
+                ٢. "الناجح هو من يستفيد من <span class="wrong-mark">نجاحات</span> الآخرين."
+            </div>
+            <div class="feedback-area">
+                <div class="feedback-icon">تغذية راجعة</div>
+                <div class="feedback-content">
+                    <b>لماذا الخطأ؟</b> الاستفادة الحقيقية التي توفر عليك الوقت هي التعلم من <b>(أخطاء)</b> أو عثرات الآخرين لكي لا تكررها، أما النجاح فيُحاكى ولا يُستفاد من "خطئه".
+                    <br><span class="correct-mark">✔️ الصواب: أخطاء / عثرات</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- مثال 3 -->
+        <div class="example-wrapper">
+            <div class="example-text">
+                ٣. "عظمة عقلك تخلق لك <span class="wrong-mark">الأعداء</span>، وعظمة قلبك تخلق لك المحبين."
+            </div>
+            <div class="feedback-area">
+                <div class="feedback-icon">تغذية راجعة</div>
+                <div class="feedback-content">
+                    <b>لماذا الخطأ؟</b> هنا "مقابلة". العقل المتفوق يثير الغيرة فينتج عنه <b>(حسّاد)</b>، بينما القلب العظيم ينتج عنه محبين. الكلمة (الأعداء) قوية جداً وغير دقيقة سياقياً هنا.
+                    <br><span class="correct-mark">✔️ الصواب: الحساد</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- التوقيع -->
+    <div class="footer-signature">
+        <div class="name-tag">أ / عبدالعزيز الفيفي</div>
+        <div class="school-tag">ثانوية الأمير عبدالمجيد 🎓</div>
+    </div>
+</div>
+
+</body>
+</html>
